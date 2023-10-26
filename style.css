@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:opsz,wght@9..144,700;9..144,900&display=swap');
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+body{
+    font-family: 'Barlow', sans-serif;
+}
+
+:root {
+    --FONT-SIZE : 18px;
+    --BARLOW : 'Barlow', sans-serif;
+    --FRAUNCES : 'Fraunces', serif;
+    --WHITE:  hsl(0, 0%, 100%);
+}
+
+/* .navbar a{
+    font-size: 18px;
+    color: #222;
+    text-decoration: none;
+    margin: 0 20px;
+    transition: .3s;
+}
+.navbar a:hover,
+ .navbar a.active{
+    color: #1743e3; */
+
+header {
+        width: 100vw;
+        height: 550px;
+        background-image: url('./images/desktop/image-header.jpg') ;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        padding: 25px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .header{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+    nav{
+        display: flex;
+        justify-content: space-between;
+        gap: 1rem;
+    }
+    nav a{
+        padding: 12px 15px;
+        font-size: 12px;
+        text-decoration: none;
+        color: var(--WHITE);
+        font-weight: lighter;
+        
+    }
+    nav a:hover, nav a.active {
+        background-color:  var(--WHITE);
+        color: #333;
+        border-radius: 20px;
+        font-family: var(--FRAUNCES);
+    }
+    .title{
+        font-family: var(--BARLOW);
+        font-size: 20px;
+        color: var(--WHITE);
+    }
+    .headertext h1{
+        position: relative;
+        top: 60px;
+        font-family: var(--FRAUNCES);
+        color: var(--WHITE);
+        letter-spacing: 5px;
+    }
+
+    .arrow{
+        position: relative;
+        top: 135px;
+        z-index: 2;
+    }
+main .container1{
+    display: flex;
+    width: 100vw;
+    height: 400px;
+}
+.text1{
+    display: flex;
+    flex-direction: column;
+    font-family: var(--FRAUNCES);
+}
+p {
+    font-family: var(--BARLOW);
+}
+.text1, .egg {
+    flex: 1;
+    width: 50%;
+}
+.egg {
+    background-image: url(./images/desktop/image-transform.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
