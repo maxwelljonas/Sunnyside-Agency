@@ -14,22 +14,12 @@ body{
     --BARLOW : 'Barlow', sans-serif;
     --FRAUNCES : 'Fraunces', serif;
     --WHITE:  hsl(0, 0%, 100%);
+    --GRAY: #333;
 }
-
-/* .navbar a{
-    font-size: 18px;
-    color: #222;
-    text-decoration: none;
-    margin: 0 20px;
-    transition: .3s;
-}
-.navbar a:hover,
- .navbar a.active{
-    color: #1743e3; */
 
 header {
         width: 100vw;
-        height: 550px;
+        height: 560px;
         background-image: url('./images/desktop/image-header.jpg') ;
         background-size: cover;
         background-repeat: no-repeat;
@@ -44,6 +34,11 @@ header {
         justify-content: space-between;
         width: 100%;
     }
+    .sslogo{
+        position: relative;
+        top: 10px;
+        padding:0  0 15px 0 ;
+    }
     nav{
         display: flex;
         justify-content: space-between;
@@ -51,7 +46,7 @@ header {
     }
     nav a{
         padding: 12px 15px;
-        font-size: 12px;
+        font-size: 16px;
         text-decoration: none;
         color: var(--WHITE);
         font-weight: lighter;
@@ -60,19 +55,16 @@ header {
     nav a:hover, nav a.active {
         background-color:  var(--WHITE);
         color: #333;
-        border-radius: 20px;
+        border-radius: 25px;
         font-family: var(--FRAUNCES);
     }
-    .title{
-        font-family: var(--BARLOW);
-        font-size: 20px;
-        color: var(--WHITE);
-    }
+   
     .headertext h1{
         position: relative;
         top: 60px;
         font-family: var(--FRAUNCES);
         color: var(--WHITE);
+        font-size: 40px;
         letter-spacing: 5px;
     }
 
@@ -81,26 +73,85 @@ header {
         top: 135px;
         z-index: 2;
     }
-main .container1{
+main .container{
     display: flex;
     width: 100vw;
-    height: 400px;
-}
-.text1{
-    display: flex;
-    flex-direction: column;
+    height: 500px;
     font-family: var(--FRAUNCES);
+}
+.text{
+    display: grid;
+    place-items: center;
+    background-color: var(--WHITE);
 }
 p {
     font-family: var(--BARLOW);
+    line-height: 2rem;
 }
-.text1, .egg {
+.container .text .minorcontainer{
+    width: 62%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2rem;
+}
+.container .text .minorcontainer p{
+    color: hsl(210, 4%, 67%);
+}
+ a.lmy, a.lmy:hover, a.lmy:visited {
+    text-decoration: underline;
+    text-decoration-color: hsl(51, 100%, 49%);
+    text-decoration-thickness: 5px;
+    color: var(--GRAY);
+}
+.container .text .minorcontainer h2 {
+    font-size: 30px;
+    color: var(--GRAY);
+}
+
+.text {
     flex: 1;
     width: 50%;
 }
 .egg {
-    background-image: url(./images/desktop/image-transform.jpg);
-    background-repeat: no-repeat;
+    background: url(./images/desktop/image-transform.jpg) no-repeat center;
     background-size: cover;
-    background-position: center;
+}
+
+.egg, .cup, .cherry, .orange{
+    flex: 1;
+    width: 50%;
+}
+.cup {
+    background: url(./images/desktop/image-stand-out.jpg) no-repeat center;
+    background-size: cover;
+}
+
+a.lmr, a.lmr:hover, a.lmr:visited {
+    text-decoration: underline;
+    text-decoration-color: hsl(7, 99%, 70%);
+    text-decoration-thickness: 5px;
+    color: var(--GRAY);
+}
+/* NEW SECTION */
+.cherry{
+    background: url(./images/desktop/image-graphic-design.jpg) no-repeat center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 45px 0;
+}
+.orange{
+    background: url(./images/desktop/image-photography.jpg) no-repeat center;
+    background-size: cover;
+}
+.bottom{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 60%;
+    gap: 2rem;
+    color: hsl(167, 40%, 24%);
 }
